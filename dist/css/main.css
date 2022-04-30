@@ -68,15 +68,17 @@ body {
 @media (min-width: 75em) {
   body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
   }
 
   .ping {
     width: 144rem;
     height: 102.4rem;
     margin: 0;
-    padding: 8.8rem 40.2rem 5.2rem;
+    padding: 8.6rem 40.2rem 5.2rem;
   }
 }
 .ping__logo {
@@ -102,13 +104,17 @@ body {
   }
 
   .ping__title {
-    margin: 6rem 0 3.4rem;
-    font-size: 3.5rem;
+    margin: 4.9rem 0 1.65rem;
+    font-size: 4.8rem;
+  }
+
+  .ping__subscribe {
+    font-size: 2rem;
   }
 }
 .form {
   position: relative;
-  width: 56.4rem;
+  width: 70rem;
 }
 
 .ping__email {
@@ -178,28 +184,61 @@ body {
 }
 
 @media (min-width: 75em) {
-  form {
-    width: 64rem;
+  .form {
+    display: flex;
+    gap: 1.8rem;
+    width: auto;
   }
 
   .ping__email {
-    display: inline-block;
-    width: 42.2rem;
-    margin-top: 4.6rem;
-    padding: 3.2rem 2.4rem;
+    width: 42rem;
+    margin-top: 4rem;
+    padding: 1.05rem 3rem 1.45rem;
+    border: 0.1rem solid hsl(0deg, 0%, 85%);
     border-radius: 4rem;
   }
 
-  .error {
+  .ping__email:active {
+    border: 0.1rem solid hsl(0deg, 0%, 85%) !important;
+  }
+
+  .error-border {
+    border: 0.1rem solid hsl(354deg, 100%, 66%);
+  }
+
+  .ping__email::-moz-placeholder {
+    color: hsl(0deg, 0%, 85%);
+    font-size: 1.6rem;
+  }
+
+  .ping__email:-ms-input-placeholder {
+    color: hsl(0deg, 0%, 85%);
+    font-size: 1.6rem;
+  }
+
+  .ping__email::placeholder {
+    color: hsl(0deg, 0%, 85%);
+    font-size: 1.6rem;
+  }
+
+  .error-message {
+    display: block;
+    position: absolute;
+    top: 10.5rem;
     left: 3rem;
-    margin-bottom: 9.4rem;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: italic;
+    color: hsl(354deg, 100%, 66%);
   }
 
   .ping__submit {
-    display: inline-block;
-    margin-top: 0;
-    margin-left: 1.5rem;
-    padding: 0 2.4rem;
+    width: 20.2rem;
+    margin-top: 4rem;
+    padding: 1.1rem 2.4rem 1.3rem;
+    font-size: 1.6rem;
+    box-shadow: 0rem 0.5rem 0.5rem 0.5rem hsla(223deg, 87%, 63%, 0.2);
   }
 }
 .ping__illustration {
@@ -245,21 +284,32 @@ body {
 }
 
 @media (min-width: 75em) {
-  .ping_illustration {
-    width: 64.2rem;
-    margin: 9.5rem 0 7.3rem;
+  .ping__illustration {
+    width: 100%;
+    margin: 8.6rem 0 7.2rem;
   }
 
   .ping__social {
     gap: 1.4rem;
-    margin-bottom: 3rem;
+    width: 13rem;
+    margin-bottom: 2.6rem;
   }
 
   .ping__social-item {
-    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: 0.1rem solid hsl(0deg, 0%, 85%);
+  }
+
+  .ping__social-item > a {
+    font-size: 1.5rem;
   }
 
   .copyright {
-    font-size: 2rem;
+    font-size: 1.2rem;
+    color: hsl(0deg, 0%, 59%);
   }
 }/*# sourceMappingURL=main.css.map */
