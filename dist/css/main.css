@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 1rem = 10px */
+html {
+  font-size: 62.5%;
+}
+
+button {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.attribution {
+  margin: 2rem auto;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: hsl(209deg, 33%, 12%);
+  background: linear-gradient(hsl(223deg, 35%, 83%), hsl(223deg, 35%, 90%));
+}
+
+.ping {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75rem;
+  height: 162rem;
+  margin: 0.5rem auto;
+  padding: 17rem 5.4rem 7.8rem;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0.7rem 1rem 0.2rem hsla(0deg, 0%, 0%, 0.1);
+}
+
+@media (min-width: 75em) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ping {
+    width: 144rem;
+    height: 102.4rem;
+    margin: 0;
+    padding: 8.8rem 40.2rem 5.2rem;
+  }
+}
+.ping__logo {
+  width: 10.7rem;
+  height: auto;
+}
+
+.ping__title {
+  margin: 7.8rem 0 3.6rem;
+  font-size: 4.4rem;
+  font-weight: 700;
+}
+
+.ping__title > span {
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 300;
+}
+
+@media (min-width: 75em) {
+  .ping__logo {
+    width: 8.8rem;
+    height: 2.5rem;
+  }
+
+  .ping__title {
+    margin: 6rem 0 3.4rem;
+    font-size: 3.5rem;
+  }
+}
+.form {
+  position: relative;
+  width: 56.4rem;
+}
+
+.ping__email {
+  display: block;
+  width: 100%;
+  margin-top: 6.4rem;
+  padding: 2.35rem 6.5rem;
+  border-radius: 4rem;
+  outline: none;
+  border: 0.2rem solid hsl(223deg, 35%, 83%);
+}
+
+.error-border {
+  border: 0.2rem solid hsl(354deg, 100%, 66%);
+}
+
+.ping__email:active {
+  border: 0.2rem solid hsl(223deg, 35%, 83%) !important;
+}
+
+.ping__email::-moz-placeholder {
+  color: hsl(223deg, 35%, 83%);
+}
+
+.ping__email:-ms-input-placeholder {
+  color: hsl(223deg, 35%, 83%);
+}
+
+.ping__email::placeholder {
+  color: hsl(223deg, 35%, 83%);
+}
+
+.ping__email--error {
+  display: none;
+}
+
+.error-message {
+  display: block;
+  margin: 1.2rem 11rem 2.8rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+  color: hsl(354deg, 100%, 66%);
+}
+
+.ping__submit {
+  width: 100%;
+  margin-top: 1.8rem;
+  padding: 2.55rem 6.5rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+  text-align: center;
+  background-color: hsl(223deg, 87%, 63%);
+  border: none;
+  border-radius: 4rem;
+  box-shadow: 0.5rem 1rem 2rem hsla(223deg, 87%, 63%, 0.3);
+  cursor: pointer;
+}
+
+.ping__submit:hover,
+.ping__submit:focus {
+  background-color: hsl(223deg, 87%, 73%);
+}
+
+.ping__submit:active {
+  border: none !important;
+}
+
+@media (min-width: 75em) {
+  form {
+    width: 64rem;
+  }
+
+  .ping__email {
+    display: inline-block;
+    width: 42.2rem;
+    margin-top: 4.6rem;
+    padding: 3.2rem 2.4rem;
+    border-radius: 4rem;
+  }
+
+  .error {
+    left: 3rem;
+    margin-bottom: 9.4rem;
+  }
+
+  .ping__submit {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 1.5rem;
+    padding: 0 2.4rem;
+  }
+}
+.ping__illustration {
+  margin: 13.6rem 0 24rem;
+}
+
+.ping__illustration--error {
+  margin: 7.2rem 0 24rem;
+}
+
+.ping__social {
+  display: flex;
+  gap: 2.7rem;
+  justify-content: center;
+  margin-bottom: 5.6rem;
+}
+
+.ping__social-item {
+  width: 6rem;
+  height: 6rem;
+  background-color: hsl(0deg, 0%, 100%);
+  border: 0.1rem solid hsl(223deg, 35%, 83%);
+  border-radius: 50%;
+}
+
+.ping__social-item > a {
+  font-size: 2.8rem;
+  color: hsl(223deg, 87%, 63%);
+}
+
+.ping__social-item:hover {
+  border: none;
+  background-color: hsl(223deg, 87%, 63%);
+}
+
+.ping__social-item:hover > a {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.copyright {
+  font-size: 2rem;
+  color: hsl(0deg, 0%, 59%);
+}
+
+@media (min-width: 75em) {
+  .ping_illustration {
+    width: 64.2rem;
+    margin: 9.5rem 0 7.3rem;
+  }
+
+  .ping__social {
+    gap: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .ping__social-item {
+    height: 3.2rem;
+  }
+
+  .copyright {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=main.css.map */
