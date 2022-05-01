@@ -29,29 +29,32 @@
 
     <form id="form" class="form" action="#" novalidate>
       <input id="email" class="ping__email" type="email" aria-label="email" placeholder="Your email address...">
-      <div id="error-message" class="ping__email--error">Please provide a valid email address</div>
+      <div id="error-message1" class="ping__email--error">Whoops! It looks like you forgot to add your email</div>
+      <div id="error-message2" class="ping__email--error">Please provide a valid email address</div>
+      
+      
 
       <button id="submit" class="ping__submit" type="submit" aria-label="submit">Notify Me</button>
     </form>
 
     <img id="illustration" class="ping__illustration" src="./images/illustration-dashboard.png" alt="illustration">
               
-    <div class="ping__social">
-      <button class="ping__social-item" aria-label="facebook"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></button>
-      <button class="ping__social-item" aria-label="twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></button>
-      <button class="ping__social-item" aria-label="instagram"><a href="#"><i class="fa-brands fa-instagram"></i></a></button>
-    </div>
+    <ul class="ping__social">
+      <li class="ping__social-item" aria-label="facebook"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+      <li class="ping__social-item" aria-label="twitter"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+      <li class="ping__social-item" aria-label="instagram"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
 
     <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
                  
   </main>
 
-  <footer>
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> -->
 
   <script src="./validation.js"></script>
 </body>

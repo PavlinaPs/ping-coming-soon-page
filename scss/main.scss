@@ -103,11 +103,13 @@ body {
 
 .error-message {
     display: block;
-    margin: 1.3rem 11rem 2.7rem;
+    width: 100%;
+    margin: 1.3rem 0 2.7rem;
     font-size: $fs-small;
     font-weight: $fw-semi-bold;
     font-style: italic;
     color: $clr-light-red;
+    text-align: center;
 }
 
 .ping__submit {
@@ -171,6 +173,7 @@ body {
         font-weight: $fw-semi-bold;
         font-style: italic;
         color: $clr-light-red;
+        text-align: left;
     }
 
     .ping__submit {
@@ -195,9 +198,13 @@ body {
     gap: 2.7rem;
     justify-content: center;
     margin-bottom: 5.6rem;
+    list-style-type: none;
 }
 
 .ping__social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 6rem;
     height: 6rem;
     background-color: $clr-white;
@@ -237,9 +244,6 @@ body {
     }
     
     .ping__social-item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 3rem;
         height: 3rem;
         border: 0.1rem solid $clr-light-gray;
