@@ -69,7 +69,7 @@ I would like to use more nesting in Sass, I sometimes forget it is possible, eve
 
 ### Useful resources
 
-- [Sass, BEM, & Responsive Design (4 hr beginners course)](https://youtu.be/jfMHA8SqUL4?t=1) by Coder Coder. I already know most of it, I watch these videos anyway, I always find something useful. 
+- [Sass, BEM, & Responsive Design (4 hr beginners course)](https://youtu.be/jfMHA8SqUL4?t=1) by Coder Coder. I already know most of it, I watch such videos anyway, I always find something useful. 
 
 ## Author
 
